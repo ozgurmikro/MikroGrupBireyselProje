@@ -15,17 +15,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shared", "shared", "{0FEEFA
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "catalog", "catalog", "{C81AB24A-5756-4691-A16C-07F26FCB85D9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UdemyMicroservices.Catalog", "UdemyMicroservices.Catalog\UdemyMicroservices.Catalog.csproj", "{8A936495-003C-45B8-932B-C70F512FA55B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MikroGrupBireyselProje.Catalog", "MikroGrupBireyselProje.Catalog\MikroGrupBireyselProje.Catalog.csproj", "{8A936495-003C-45B8-932B-C70F512FA55B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UdemyMicroservices.Shared", "UdemyMicroservives.Shared\UdemyMicroservices.Shared.csproj", "{3E3F84F8-5B29-40B5-8421-59D3FCE93E29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MikroGrupBireyselProje.Shared", "UdemyMicroservives.Shared\MikroGrupBireyselProje.Shared.csproj", "{3E3F84F8-5B29-40B5-8421-59D3FCE93E29}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{B1D7F6A7-5D14-4A75-9449-3991FC759FFD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "basket", "basket", "{445419EF-A2A8-4CEE-AF80-BF76F63704EC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UdemyMicroservices.Basket", "UdemyMicroservices.Basket\UdemyMicroservices.Basket.csproj", "{CADD2B67-C070-4A5E-A3D7-013080449AC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MikroGrupBireyselProje.Basket", "MikroGrupBireyselProje.Basket\MikroGrupBireyselProje.Basket.csproj", "{CADD2B67-C070-4A5E-A3D7-013080449AC8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UdemyMicroservices.Bus", "UdemyMicroservices.Bus\UdemyMicroservices.Bus.csproj", "{D19BB725-37CE-453D-9CFE-AFAC0EFFDD73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MikroGrupBireyselProje.Bus", "MikroGrupBireyselProje.Bus\MikroGrupBireyselProje.Bus.csproj", "{D19BB725-37CE-453D-9CFE-AFAC0EFFDD73}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "discount", "discount", "{5912C8D4-BB5B-4182-94F7-5FB5AF3DE8EC}"
 EndProject
@@ -37,27 +37,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "instrastrcutre", "instrastr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "api", "api", "{A00E4548-937A-4245-BB78-9FF76DC48D9F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UdemyMicroservices.Order.Domain", "UdemyMicroservices.Order.Domain\UdemyMicroservices.Order.Domain.csproj", "{040EBB05-7F5B-48A5-905C-E77819FD8B73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MikroGrupBireyselProje.Order.Domain", "MikroGrupBireyselProje.Order.Domain\MikroGrupBireyselProje.Order.Domain.csproj", "{040EBB05-7F5B-48A5-905C-E77819FD8B73}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UdemyMicroservices.Order.Application", "UdemyMicroservices.Order.Application\UdemyMicroservices.Order.Application.csproj", "{8100AD2E-BD5E-4416-87C7-5DE19BD5A38C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MikroGrupBireyselProje.Order.Application", "MikroGrupBireyselProje.Order.Application\MikroGrupBireyselProje.Order.Application.csproj", "{8100AD2E-BD5E-4416-87C7-5DE19BD5A38C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UdemyMicroservices.Order.API", "UdemyMicroservices.Order.API\UdemyMicroservices.Order.API.csproj", "{E6955CF7-EC97-4A15-9551-B45BB3F22655}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MikroGrupBireyselProje.Order.API", "MikroGrupBireyselProje.Order.API\MikroGrupBireyselProje.Order.API.csproj", "{E6955CF7-EC97-4A15-9551-B45BB3F22655}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UdemyMicroservices.Order.Persistence", "UdemyMicroservices.Order.Repository\UdemyMicroservices.Order.Persistence.csproj", "{C24BC4E3-B92A-40D9-BEB6-8C9323BB2908}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MikroGrupBireyselProje.Order.Persistence", "MikroGrupBireyselProje.Order.Repository\MikroGrupBireyselProje.Order.Persistence.csproj", "{C24BC4E3-B92A-40D9-BEB6-8C9323BB2908}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "payment", "payment", "{5C12CA5D-8684-4942-8E71-4F97CE7026D2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UdemyMicroservices.Payment", "UdemyMicroservices.Payment\UdemyMicroservices.Payment.csproj", "{EAB37BAC-9ACD-43A7-8BE2-A802254C391A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MikroGrupBireyselProje.Payment", "MikroGrupBireyselProje.Payment\MikroGrupBireyselProje.Payment.csproj", "{EAB37BAC-9ACD-43A7-8BE2-A802254C391A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UdemyMicroservices.Discount", "UdemyMicroservices.Discount\UdemyMicroservices.Discount.csproj", "{6FA7C742-75E6-4940-9F14-61FFE2E0EABA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MikroGrupBireyselProje.Discount", "MikroGrupBireyselProje.Discount\MikroGrupBireyselProje.Discount.csproj", "{6FA7C742-75E6-4940-9F14-61FFE2E0EABA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "file", "file", "{3A2076AE-4E43-4BD1-B1BC-4AE9660B3458}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UdemyMicroservices.Files", "UdemyMicroservices.Files\UdemyMicroservices.Files.csproj", "{757957F6-CC76-4F0D-AADD-45F027F11317}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MikroGrupBireyselProje.Files", "MikroGrupBireyselProje.Files\MikroGrupBireyselProje.Files.csproj", "{757957F6-CC76-4F0D-AADD-45F027F11317}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UdemyMicroservices.Yarp", "UdemyMicroservices.Yarp\UdemyMicroservices.Yarp.csproj", "{3C76FB37-739C-4EB6-8414-D7A94CA91381}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MikroGrupBireyselProje.Yarp", "MikroGrupBireyselProje.Yarp\MikroGrupBireyselProje.Yarp.csproj", "{3C76FB37-739C-4EB6-8414-D7A94CA91381}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UdemyMicroservices.Web", "UdemyMicroservices.Web\UdemyMicroservices.Web.csproj", "{E893D688-8CE1-4F81-9A26-4E12D1D5FBF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MikroGrupBireyselProje.Web", "MikroGrupBireyselProje.Web\MikroGrupBireyselProje.Web.csproj", "{E893D688-8CE1-4F81-9A26-4E12D1D5FBF7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
