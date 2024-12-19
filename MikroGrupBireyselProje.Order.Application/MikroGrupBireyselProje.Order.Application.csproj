@@ -13,7 +13,7 @@
   <ItemGroup>
     <ProjectReference Include="..\MikroGrupBireyselProje.Bus\MikroGrupBireyselProje.Bus.csproj" />
     <ProjectReference Include="..\MikroGrupBireyselProje.Order.Domain\MikroGrupBireyselProje.Order.Domain.csproj" />
-    <ProjectReference Include="..\UdemyMicroservives.Shared\MikroGrupBireyselProje.Shared.csproj" />
+    <ProjectReference Include="..\MikroGrupBireyselProje.Shared\MikroGrupBireyselProje.Shared.csproj" />
   </ItemGroup>
 
 </Project>
