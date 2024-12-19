@@ -4,7 +4,7 @@
     container_name: basket.api.container
     build:
       context: .
-      dockerfile: UdemyMicroservices.Basket/Dockerfile
+      dockerfile: MikroGrupBireyselProje.Basket/Dockerfile
     environment:
       - ASPNETCORE_ENVIRONMENT=Production
       - ASPNETCORE_HTTP_PORTS=8080
@@ -15,7 +15,7 @@
     container_name: catalog.api.container
     build:
       context: .
-      dockerfile: UdemyMicroservices.Catalog/Dockerfile
+      dockerfile: MikroGrupBireyselProje.Catalog/Dockerfile
     environment:
       - ASPNETCORE_ENVIRONMENT=Production
       - ASPNETCORE_HTTP_PORTS=8080
@@ -26,7 +26,7 @@
     container_name: discount.api.container
     build:
       context: .
-      dockerfile: UdemyMicroservices.Discount/Dockerfile
+      dockerfile: MikroGrupBireyselProje.Discount/Dockerfile
     environment:
       - ASPNETCORE_ENVIRONMENT=Production
       - ASPNETCORE_HTTP_PORTS=8080
@@ -38,7 +38,7 @@
     container_name: file.api.container
     build:
       context: .
-      dockerfile: UdemyMicroservices.Files/Dockerfile
+      dockerfile: MikroGrupBireyselProje.Files/Dockerfile
     environment:
       - ASPNETCORE_ENVIRONMENT=Production
       - ASPNETCORE_HTTP_PORTS=8080
@@ -51,7 +51,7 @@
     container_name: order.api.container
     build:
       context: .
-      dockerfile: UdemyMicroservices.Order.API/Dockerfile
+      dockerfile: MikroGrupBireyselProje.Order.API/Dockerfile
     environment:
       - ASPNETCORE_ENVIRONMENT=Production
       - ASPNETCORE_HTTP_PORTS=8080
@@ -62,7 +62,7 @@
     container_name: payment.api.container
     build:
       context: .
-      dockerfile: UdemyMicroservices.Payment/Dockerfile
+      dockerfile: MikroGrupBireyselProje.Payment/Dockerfile
     environment:
       - ASPNETCORE_ENVIRONMENT=Production
       - ASPNETCORE_HTTP_PORTS=8080
@@ -73,7 +73,7 @@
     container_name: yarp.api.container
     build:
       context: .
-      dockerfile: UdemyMicroservices.Yarp/Dockerfile
+      dockerfile: MikroGrupBireyselProje.Yarp/Dockerfile
     environment:
       - ASPNETCORE_ENVIRONMENT=Production
       - ASPNETCORE_HTTP_PORTS=8080
@@ -85,7 +85,7 @@
     container_name: web.api.container
     build:
       context: .
-      dockerfile: UdemyMicroservices.Web/Dockerfile
+      dockerfile: MikroGrupBireyselProje.Web/Dockerfile
     environment:
       - ASPNETCORE_ENVIRONMENT=Production
       - ASPNETCORE_HTTP_PORTS=8080
