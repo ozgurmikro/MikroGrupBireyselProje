@@ -1,0 +1,53 @@
+﻿using System.Net;
+using System.Text.Json;
+using MediatR;
+using Microsoft.Extensions.Caching.Distributed;
+using MikroGrupBireyselProje.Basket.Dto;
+using MikroGrupBireyselProje.Shared;
+using MikroGrupBireyselProje.Shared.Services;
+
+namespace MikroGrupBireyselProje.Basket.Features.Basket.DeleteBasket;
+
+public class DeleteBasketCommandHandler(IDistributedCache distributedCache, IIdentityService identityService)
+    : IRequestHandler<DeleteBasketCommand, ServiceResult>
+{
+    public async Task<ServiceResult> Handle(DeleteBasketCommand request, CancellationToken cancellationToken)
+    {
+        //basket key
+        var cacheKey = string.Format(BasketConst.BasketCacheKey, identityService.GetUserId);
+
+        var hasBasket = await distributedCache.GetStringAsync(cacheKey, cancellationToken);
+
+
+        if (string.IsNullOrEmpty(hasBasket))
+            return ServiceResult.Error("basket not found", "", HttpStatusCode.NotFound);
+
+
+        var currentBasket = JsonSerializer.Deserialize<BasketDto>(hasBasket!);
+
+
+        var basketItemToDelete = currentBasket!.BasketItems.FirstOrDefault(x => x.Id == request.CourseId);
+
+        if (basketItemToDelete is null)
+            return ServiceResult.Error("basket Item not found", "", HttpStatusCode.NotFound);
+
+
+        if (currentBasket!.BasketItems.Count == 1)
+        {
+            await distributedCache.RemoveAsync(cacheKey, cancellationToken);
+            return ServiceResult.SuccessAsNoContent();
+        }
+
+
+        currentBasket.BasketItems.Remove(basketItemToDelete!);
+
+
+        var basketAsJson = JsonSerializer.Serialize(currentBasket);
+
+        await distributedCache.SetStringAsync(string.Format(BasketConst.BasketCacheKey, identityService.GetUserId),
+            basketAsJson, cancellationToken);
+
+
+        return ServiceResult.SuccessAsNoContent();
+    }
+}

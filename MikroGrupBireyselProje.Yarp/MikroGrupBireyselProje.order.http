@@ -1,0 +1,40 @@
+@MikroGrupBireyselProje.Yarp_HostAddress = http://localhost:5215
+@userId=1;
+### Create Order
+POST {{MikroGrupBireyselProje.Yarp_HostAddress}}/v1/order
+Content-Type: application/json
+Accept: application/json
+{
+  "DiscountRate": 10.5,
+  "Address": {
+    "Line": "123 Main St",
+    "Province": "Ontario",
+    "District": "Toronto",
+    "ZipCode": "M1B 2K4"
+  },
+  "Payment": {
+    "CardNumber": "4111111111111111",
+    "CardHolderName": "John Doe",
+    "ExpiryDate": "12/25",
+    "Cvv": "123",
+    "Amount": 150.75
+  },
+  "OrderItems": [
+    {
+      "ProductId": "3762ff3a-4b07-4918-b478-d58df7edbffe",
+      "ProductName": "Course 1",
+      "UnitPrice": 50.25
+    },
+    {
+      "ProductId": "b1acc2a7-d4bc-4ea2-ae11-ac2800548e82",
+      "ProductName": "Course 2",
+      "UnitPrice": 100.50
+    }
+  ]
+}
+###
+
+### Get All Orders by User ID
+GET {{MikroGrupBireyselProje.Yarp_HostAddress}}/v1/order/userId
+Accept: application/json
+###

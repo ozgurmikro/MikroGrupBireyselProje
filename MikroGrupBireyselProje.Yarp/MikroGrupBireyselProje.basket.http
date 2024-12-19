@@ -1,0 +1,27 @@
+@MikroGrupBireyselProje.Basket_HostAddress = http://localhost:5215
+
+### GetAllBasketByUserId Endpoint
+GET {{MikroGrupBireyselProje.Basket_HostAddress}}/v1/basket
+Accept: application/json
+###
+### SaveOrUpdateBasket Endpoint
+POST {{MikroGrupBireyselProje.Basket_HostAddress}}/v1/basket
+Content-Type: application/json
+
+{
+  "userId": "user123",
+  "discountCode": "DISCOUNT10",
+  "discountRate": 10,
+  "basketItems": [
+    {
+      "courseId": "course123",
+      "courseName": "Course Name",
+      "price": 100.0
+    }
+  ]
+}
+###
+### DeleteBasket Endpoint
+DELETE {{MikroGrupBireyselProje.Basket_HostAddress}}/v1/basket/courseId
+Accept: application/json
+###

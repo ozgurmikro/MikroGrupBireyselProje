@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Refit.HttpClientFactory" Version="7.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MikroGrupBireyselProje.Bus\MikroGrupBireyselProje.Bus.csproj" />
+    <ProjectReference Include="..\MikroGrupBireyselProje.Order.Domain\MikroGrupBireyselProje.Order.Domain.csproj" />
+    <ProjectReference Include="..\UdemyMicroservives.Shared\MikroGrupBireyselProje.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

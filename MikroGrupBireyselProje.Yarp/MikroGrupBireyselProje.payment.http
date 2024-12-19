@@ -1,0 +1,18 @@
+﻿@MikroGrupBireyselProje.Yarp_HostAddress = http://localhost:5215
+
+POST {{MikroGrupBireyselProje.Yarp_HostAddress}}/v1/payment/receive
+Content-Type: application/json
+Accept: application/json
+
+{
+  "orderCode": "1",
+  "cardNumber": "4242 4242 4242 4242",
+  "cardHolderName": "ahmet yıldız",
+  "expiryDate": "10/24",
+  "cvv": "123",
+  "amount": 1000
+}
+###
+GET {{MikroGrupBireyselProje.Yarp_HostAddress}}/v1/payment
+Content-Type: application/json
+###

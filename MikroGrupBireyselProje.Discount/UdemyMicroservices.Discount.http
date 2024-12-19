@@ -1,0 +1,18 @@
+@MikroGrupBireyselProje.Discount_HostAddress = http://localhost:5206
+
+### GetDiscountByCode Endpoint
+GET {{MikroGrupBireyselProje.Discount_HostAddress}}/api/v1/discounts/DISCOUNT10
+Accept: application/json
+
+###
+
+### CreateDiscount Endpoint
+POST {{MikroGrupBireyselProje.Discount_HostAddress}}/api/v1/discounts
+Content-Type: application/json
+{
+  "userId":"5e10f3fc-703d-4662-bca1-85af479c7889",
+  "code": "DISCOUNT10",
+  "rate": 10,
+  "expired":"2025-09-12T13:39:18.188Z"
+}
+###

@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>79eb7388-8ada-445d-a727-98a0dc25df82</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="BasketDto.cs" />
+    <Compile Remove="BasketItemDto.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Dto\BasketDto.cs" />
+    <None Include="Dto\BasketItemDto.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.8" />
+    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="8.0.8" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
+    <PackageReference Include="StackExchange.Redis" Version="2.8.16" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MikroGrupBireyselProje.Bus\MikroGrupBireyselProje.Bus.csproj" />
+    <ProjectReference Include="..\UdemyMicroservives.Shared\MikroGrupBireyselProje.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
